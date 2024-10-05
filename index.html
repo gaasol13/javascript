@@ -1,0 +1,56 @@
+<!--CREATE AN INTERACTIVE blog website: The topic is of your choice, but it needs to meet the following:
+1) A dark/light mode toggle
+2) A blog page with at least one post already made
+3) A form with three fields to add a new blog entry: Title, Author,Entry
+4) A submit button that validates the form thrpugh JavaScript
+5) A consisten navigation bar on all pages
+6) At least three pages (Landing (home) page explaining who you are and what the site is all about. A blog page fpor blog posts. A contact page for sending 
+ the website owner an email) 
+ 7) Adding a blog at the top of the page, nopt the buttom (you could even try filtering blogs/searching/ordering with filtetr options
+ 8) Deleting a blog post
+ 9) Complex layout made using a flex and / or grid
+  SUCCESS CRITERIA
+  All code is explicity clean and easy to read, with all W3C coding standards met and created to a professional standard
+  Javascript has been implemented successfully and without breaking the original code or layout)-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta hettp-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gabe">
+        <title>index</title>
+        <link rel="stylesheet" href="./CSS/stylesheet.css">
+    </head>
+
+    <body class="light-mode"> <!--Class creation to identify light/dark theme-->
+        <div id="header">
+            <nav> <!--Navigation bar-->
+                <ol>
+                    <li><a href="#">HOME</li>
+                    <li><a href="./pages/blog.html">Blog</li>
+                    <li><a href="./pages/contactme.html">Contact</li>
+                    <li><a href="#">
+                            <img src="" style="" alt="home-icon">
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div id="index-body">
+            <h1>Welcome to Mictlan</h1>
+            <p>This is a blog where we dive into various topics, including technology, culture, 
+                and more. Explore more!
+            </p>
+        </div>
+
+        <div id="footer">
+            <!--CheckBox for layout change-->
+            <button id="theme-toggle-btn">Switch to Dark Mode</button> <!-- Toggle button -->
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
