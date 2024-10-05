@@ -1,0 +1,2 @@
+# javascript
+WeAreTech Exercises
