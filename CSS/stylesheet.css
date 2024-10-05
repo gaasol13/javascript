@@ -1,0 +1,94 @@
+/* Common header*/
+
+/* Light Mode*/
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1, h3, p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+
+/*Dark mode with gradient */
+body.dark-mode{
+    background: linear-gradient(100deg, black, indigo); /*100deg, the gradient goes diaGONALLY FROM THE TOP LEFT TO THE BUTTOM RIGHT*/
+    color: white;
+}
+
+/*Navigation style*/
+nav ol{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    padding: 0;
+    background-color: #bdbcbc;
+}
+
+nav ol li{
+    display: inline; /*Element behave like a block*/
+    padding: 10px;      
+}
+
+nav ol li a{
+    color:white;
+    text-decoration: none; /*Get rid of the underline from the links*/
+    display: block;
+}
+
+nav ol li a:hover{
+    color:orange;
+    transition: color 0.3s ease-in-out; /*Transition for hover effect*/
+    
+}
+
+/*Input and Textarea Styles for blog Form*/
+#new-blog-form input, #new-blog-form textarea{
+    width: 50%; 
+    margin-bottom: 15px; /*Space betweem each input field*/
+    padding: 10px;
+    border: 1px solid lightslategray;
+}
+
+/*Blog Post List*/
+#blog-list{
+    margin-top: 15px; /*Add space abpve the blog post lis*/
+}
+
+/*Blog post styles */
+.blog-post {
+    padding: 15px;
+    margin-bottom: 10px; /*Space between blog posts*/
+    border: 1px solid #ddd;
+    border-radius: 3px; /*Rounds the edges*/
+}
+
+/*Delete post button*/
+.delete-post {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 3px;
+    cursor: pointer; /*Changes cursor to pointer when hovering over the button*/
+}
+
+.delete-post:hover {
+        transition: background-color 0.2s ease-in-out;
+}
+
+/*Footer*/
+#footer {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    
+    color:white;
+}
+
+#theme-toggle{
+    margin-left: 10px;
+}
+
+
